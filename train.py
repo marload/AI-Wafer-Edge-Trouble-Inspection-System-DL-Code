@@ -14,7 +14,6 @@ def getDataLoaderDict(idxModel): # idxModel is tuple
     testDataLoaderDict = {}
 
     for idx in idxModel:
-        print(idx)
         print("-Preprocessing model{} dataloader".format(idx))
         loader = Loader(idx)
         trainLoader, testLoader = loader.getLoader()
@@ -57,6 +56,7 @@ def train():
             for i, (images, labels) in enumerate(train_loader):
                 images = images.to(device)
                 labels = labels.to(device)
+                labels = labels.float()
 
                 outputs = model(images)
                 loss = criterion(outputs, labels)

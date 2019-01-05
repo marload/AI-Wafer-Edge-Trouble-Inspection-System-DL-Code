@@ -14,7 +14,7 @@ defaultImageSizeList = [(870, 100), (100, 100), (100, 100), (100, 100), (100,100
 for i, imgSize in enumerate(defaultImageSizeList):
     parser.add_argument('--image_size{}'.format(i+1), type=tuple, default=imgSize, help='image size of model{}'.format(i+1))
 
-parser.add_argument('--batch_size', type=int, default=16, help='minibatch size')
+parser.add_argument('--batch_size', type=int, default=8, help='minibatch size')
 
 parser.add_argument('--num_workers', type=int, default=1, help='number of workers')
 

@@ -29,9 +29,18 @@ class Loader:
         train_path = os.path.join(self.dataroot, 'train')
         test_path = os.path.join(self.dataroot, 'test')
 
-        train_set = ImageFolder(train_path, train_transform)
-        test_set = ImageFolder(test_path, test_transform)
-
+        # train_set = ImageFolder(train_path, transform=train_transform)
+        # test_set = ImageFolder(test_path, transform=test_transform)
+        train_set = ImageFolder(train_path, transform=T.Compose([
+            T.Resize((870, 100)),
+            T.ToTensor()
+        ]))
+        test_set = ImageFolder(test_path, transform=T.Compose([
+            T.Resize((870, 100)),
+            T.ToTensor()
+        ]))
+        print(self.imageSize)
+        print(type(self.imageSize))
         train_loader = DataLoader(train_set,
                                   batch_size=self.batch_size,
                                   shuffle=True,

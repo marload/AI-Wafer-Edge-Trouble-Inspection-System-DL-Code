@@ -25,7 +25,7 @@ class Model1(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(675840, 128),
+            nn.Linear(1388800, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 1),
@@ -35,6 +35,7 @@ class Model1(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
