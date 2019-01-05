@@ -14,6 +14,7 @@ def getDataLoaderDict(idxModel): # idxModel is tuple
     testDataLoaderDict = {}
 
     for idx in idxModel:
+        print(idx)
         print("-Preprocessing model{} dataloader".format(idx))
         loader = Loader(idx)
         trainLoader, testLoader = loader.getLoader()
@@ -22,7 +23,7 @@ def getDataLoaderDict(idxModel): # idxModel is tuple
         testDataLoaderDict[idx] = testLoader
         print("-Completed Preprocessing model{} dataloader\n".format(idx))
     print("All Completed Preprocessing\n")
-    return  trainDataLoaderDict, testDataLoaderDict
+    return trainDataLoaderDict, testDataLoaderDict
 
 
 def train():
