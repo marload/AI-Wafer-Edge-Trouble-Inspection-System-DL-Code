@@ -31,6 +31,7 @@ class Loader:
 
         self.get_TrainTransform()
         self.get_TestTransform()
+        print(self.get_TrainTransform())
 
         train_set = ImageFolder(train_path, transform=self.train_transform)
         test_set = ImageFolder(test_path, transform=self.test_transform)
