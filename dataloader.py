@@ -38,6 +38,7 @@ class Loader:
         if self.numModel == 1:
             train_set = ImageFolder(train_path, transform=T.Compose([
                 T.Resize(self.imageSize),
+                T.Grayscale(1),
                 T.ToTensor(),
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                         std=(0.5, 0.5, 0.5))
