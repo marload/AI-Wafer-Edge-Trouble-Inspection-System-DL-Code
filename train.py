@@ -92,7 +92,7 @@ def train():
         print("-Test Accuracy: {}\n".format(metricDict[idx]))
 
         torch.save(model.state_dict(), modelPath)
-        print("[Model{} Save Complete PATH[{}]".format(idx, modelPath))
+        print("Model{} Save Complete PATH[{}]".format(idx, modelPath))
 
     print("Learning Complete")
 
