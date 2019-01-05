@@ -80,7 +80,6 @@ def train():
                 images = images.to(device)
                 labels = labels.to(device)
                 outputs = model(images)
-                print(outputs.data)
                 if outputs.data >= 0.5:
                     predicted = 1
                 else:
@@ -93,7 +92,7 @@ def train():
         print("-Model{} Complete Test".format(idx))
         print("-Test Accuracy: {}\n".format(metricDict[idx]))
 
-        model.save(model.state_dict(), modelPath)
+        torch.save(model.state_dict(), modelPath)
         print("[Model{} Save Complete PATH[{}]".format(idx, modelPath))
 
     print("Learning Complete")
