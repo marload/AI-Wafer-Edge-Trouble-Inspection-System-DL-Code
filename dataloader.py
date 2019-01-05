@@ -25,8 +25,8 @@ class Loader:
 
     def getLoader(self):
         print("\nPreprocessing data...")
-
-        train_path = os.path.join(self.dataroot, 'train')
+        print(type(self.numModel))
+        train_path = os.path.join(self.dataroot, 't rain')
         test_path = os.path.join(self.dataroot, 'test')
 
         self.get_TrainTransform()
