@@ -46,7 +46,7 @@ class Loader:
                                   shuffle=True,
                                   num_workers=self.num_workers)
         test_loader = DataLoader(test_set,
-                                 batch_size=self.batch_size,
+                                 batch_size=1,
                                  shuffle=False,
                                  num_workers=self.num_workers)
 
