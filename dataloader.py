@@ -47,6 +47,7 @@ class Loader:
         elif self.numModel == 2:
             train_set = ImageFolder(train_path, transform=T.Compose([
                 T.Resize(self.imageSize),
+                T.Grayscale(1),
                 T.ToTensor(),
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                         std=(0.5, 0.5, 0.5))
@@ -63,6 +64,7 @@ class Loader:
         elif self.numModel == 4:
             train_set = ImageFolder(train_path, transform=T.Compose([
                 T.Resize(self.imageSize),
+                T.Grayscale(1),
                 T.ToTensor(),
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                         std=(0.5, 0.5, 0.5))
@@ -71,6 +73,7 @@ class Loader:
         elif self.numModel == 5:
             train_set = ImageFolder(train_path, transform=T.Compose([
                 T.Resize(self.imageSize),
+                T.Grayscale(1),
                 T.ToTensor(),
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                         std=(0.5, 0.5, 0.5))
@@ -79,6 +82,7 @@ class Loader:
         elif self.numModel == 6:
             train_set = ImageFolder(train_path, transform=T.Compose([
                 T.Resize(self.imageSize),
+                T.Grayscale(1),
                 T.ToTensor(),
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                         std=(0.5, 0.5, 0.5))
@@ -87,6 +91,7 @@ class Loader:
         elif self.numModel == 7:
             train_set = ImageFolder(train_path, transform=T.Compose([
                 T.Resize(self.imageSize),
+                T.Grayscale(1),
                 T.ToTensor(),
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                         std=(0.5, 0.5, 0.5))
@@ -95,6 +100,7 @@ class Loader:
         elif self.numModel == 8:
             train_set = ImageFolder(train_path, transform=T.Compose([
                 T.Resize(self.imageSize),
+                T.Grayscale(1),
                 T.ToTensor(),
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                         std=(0.5, 0.5, 0.5))
@@ -103,6 +109,7 @@ class Loader:
         elif self.numModel == 9:
             train_set = ImageFolder(train_path, transform=T.Compose([
                 T.Resize(self.imageSize),
+                T.Grayscale(1),
                 T.ToTensor(),
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                         std=(0.5, 0.5, 0.5))
@@ -111,6 +118,7 @@ class Loader:
         elif self.numModel == 10:
             train_set = ImageFolder(train_path, transform=T.Compose([
                 T.Resize(self.imageSize),
+                T.Grayscale(1),
                 T.ToTensor(),
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                         std=(0.5, 0.5, 0.5))
@@ -119,6 +127,7 @@ class Loader:
         elif self.numModel == 11:
             train_set = ImageFolder(train_path, transform=T.Compose([
                 T.Resize(self.imageSize),
+                T.Grayscale(1),
                 T.ToTensor(),
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                         std=(0.5, 0.5, 0.5))
@@ -127,6 +136,7 @@ class Loader:
         elif self.numModel == 12:
             train_set = ImageFolder(train_path, transform=T.Compose([
                 T.Resize(self.imageSize),
+                T.Grayscale(1),
                 T.ToTensor(),
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                         std=(0.5, 0.5, 0.5))
@@ -135,6 +145,7 @@ class Loader:
         elif self.numModel == 13:
             train_set = ImageFolder(train_path, transform=T.Compose([
                 T.Resize(self.imageSize),
+                T.Grayscale(1),
                 T.ToTensor(),
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                         std=(0.5, 0.5, 0.5))
@@ -143,6 +154,7 @@ class Loader:
         elif self.numModel == 14:
             train_set = ImageFolder(train_path, transform=T.Compose([
                 T.Resize(self.imageSize),
+                T.Grayscale(1),
                 T.ToTensor(),
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                         std=(0.5, 0.5, 0.5))
@@ -151,6 +163,7 @@ class Loader:
         elif self.numModel == 15:
             train_set = ImageFolder(train_path, transform=T.Compose([
                 T.Resize(self.imageSize),
+                T.Grayscale(1),
                 T.ToTensor(),
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                         std=(0.5, 0.5, 0.5))
@@ -159,6 +172,7 @@ class Loader:
         elif self.numModel == 16:
             train_set = ImageFolder(train_path, transform=T.Compose([
                 T.Resize(self.imageSize),
+                T.Grayscale(1),
                 T.ToTensor(),
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                         std=(0.5, 0.5, 0.5))
@@ -167,6 +181,7 @@ class Loader:
         elif self.numModel == 17:
             train_set = ImageFolder(train_path, transform=T.Compose([
                 T.Resize(self.imageSize),
+                T.Grayscale(1),
                 T.ToTensor(),
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                         std=(0.5, 0.5, 0.5))
@@ -175,6 +190,7 @@ class Loader:
         elif self.numModel == 18:
             train_set = ImageFolder(train_path, transform=T.Compose([
                 T.Resize(self.imageSize),
+                T.Grayscale(1),
                 T.ToTensor(),
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                         std=(0.5, 0.5, 0.5))
@@ -183,6 +199,7 @@ class Loader:
         elif self.numModel == 19:
             train_set = ImageFolder(train_path, transform=T.Compose([
                 T.Resize(self.imageSize),
+                T.Grayscale(1),
                 T.ToTensor(),
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                         std=(0.5, 0.5, 0.5))
@@ -191,6 +208,7 @@ class Loader:
         elif self.numModel == 20:
             train_set = ImageFolder(train_path, transform=T.Compose([
                 T.Resize(self.imageSize),
+                T.Grayscale(1),
                 T.ToTensor(),
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                         std=(0.5, 0.5, 0.5))
@@ -199,6 +217,7 @@ class Loader:
         elif self.numModel == 21:
             train_set = ImageFolder(train_path, transform=T.Compose([
                 T.Resize(self.imageSize),
+                T.Grayscale(1),
                 T.ToTensor(),
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                         std=(0.5, 0.5, 0.5))
@@ -207,6 +226,7 @@ class Loader:
         elif self.numModel == 22:
             train_set = ImageFolder(train_path, transform=T.Compose([
                 T.Resize(self.imageSize),
+                T.Grayscale(1),
                 T.ToTensor(),
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                         std=(0.5, 0.5, 0.5))
@@ -215,6 +235,7 @@ class Loader:
         elif self.numModel == 23:
             train_set = ImageFolder(train_path, transform=T.Compose([
                 T.Resize(self.imageSize),
+                T.Grayscale(1),
                 T.ToTensor(),
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                         std=(0.5, 0.5, 0.5))
@@ -223,6 +244,7 @@ class Loader:
         elif self.numModel == 24:
             train_set = ImageFolder(train_path, transform=T.Compose([
                 T.Resize(self.imageSize),
+                T.Grayscale(1),
                 T.ToTensor(),
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                         std=(0.5, 0.5, 0.5))
@@ -231,6 +253,7 @@ class Loader:
         elif self.numModel == 25:
             train_set = ImageFolder(train_path, transform=T.Compose([
                 T.Resize(self.imageSize),
+                T.Grayscale(1),
                 T.ToTensor(),
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                         std=(0.5, 0.5, 0.5))

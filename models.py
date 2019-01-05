@@ -46,7 +46,7 @@ class Model2(nn.Module):
         super(Model2, self).__init__()
 
         self.layer1 = nn.Sequential(
-            nn.Conv2d(3, 32, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
@@ -66,7 +66,7 @@ class Model2(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(675840, 128),
+            nn.Linear(1388800, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 1),
@@ -87,7 +87,7 @@ class Model3(nn.Module):
         super(Model3, self).__init__()
 
         self.layer1 = nn.Sequential(
-            nn.Conv2d(3, 32, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
@@ -107,7 +107,7 @@ class Model3(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(675840, 128),
+            nn.Linear(1388800, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 1),
@@ -128,7 +128,7 @@ class Model4(nn.Module):
         super(Model4, self).__init__()
 
         self.layer1 = nn.Sequential(
-            nn.Conv2d(3, 32, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
@@ -148,7 +148,7 @@ class Model4(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(675840, 128),
+            nn.Linear(1388800, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 1),
@@ -169,7 +169,7 @@ class Model5(nn.Module):
         super(Model5, self).__init__()
 
         self.layer1 = nn.Sequential(
-            nn.Conv2d(3, 32, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
@@ -189,7 +189,7 @@ class Model5(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(675840, 128),
+            nn.Linear(1388800, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 1),
@@ -210,7 +210,7 @@ class Model6(nn.Module):
         super(Model6, self).__init__()
 
         self.layer1 = nn.Sequential(
-            nn.Conv2d(3, 32, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
@@ -230,7 +230,7 @@ class Model6(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(675840, 128),
+            nn.Linear(1388800, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 1),
@@ -251,7 +251,7 @@ class Model7(nn.Module):
         super(Model7, self).__init__()
 
         self.layer1 = nn.Sequential(
-            nn.Conv2d(3, 32, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
@@ -271,7 +271,7 @@ class Model7(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(675840, 128),
+            nn.Linear(1388800, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 1),
@@ -292,7 +292,7 @@ class Model8(nn.Module):
         super(Model8, self).__init__()
 
         self.layer1 = nn.Sequential(
-            nn.Conv2d(3, 32, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
@@ -312,7 +312,7 @@ class Model8(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(675840, 128),
+            nn.Linear(1388800, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 1),
@@ -333,7 +333,7 @@ class Model9(nn.Module):
         super(Model9, self).__init__()
 
         self.layer1 = nn.Sequential(
-            nn.Conv2d(3, 32, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
@@ -353,7 +353,7 @@ class Model9(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(675840, 128),
+            nn.Linear(1388800, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 1),
@@ -374,7 +374,7 @@ class Model10(nn.Module):
         super(Model10, self).__init__()
 
         self.layer1 = nn.Sequential(
-            nn.Conv2d(3, 32, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
@@ -394,7 +394,7 @@ class Model10(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(675840, 128),
+            nn.Linear(1388800, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 1),
@@ -415,7 +415,7 @@ class Model11(nn.Module):
         super(Model11, self).__init__()
 
         self.layer1 = nn.Sequential(
-            nn.Conv2d(3, 32, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
@@ -435,7 +435,7 @@ class Model11(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(675840, 128),
+            nn.Linear(1388800, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 1),
@@ -456,7 +456,7 @@ class Model12(nn.Module):
         super(Model12, self).__init__()
 
         self.layer1 = nn.Sequential(
-            nn.Conv2d(3, 32, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
@@ -476,7 +476,7 @@ class Model12(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(675840, 128),
+            nn.Linear(1388800, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 1),
@@ -497,7 +497,7 @@ class Model13(nn.Module):
         super(Model13, self).__init__()
 
         self.layer1 = nn.Sequential(
-            nn.Conv2d(3, 32, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
@@ -517,7 +517,7 @@ class Model13(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(675840, 128),
+            nn.Linear(1388800, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 1),
@@ -538,7 +538,7 @@ class Model14(nn.Module):
         super(Model14, self).__init__()
 
         self.layer1 = nn.Sequential(
-            nn.Conv2d(3, 32, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
@@ -558,7 +558,7 @@ class Model14(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(675840, 128),
+            nn.Linear(1388800, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 1),
@@ -579,7 +579,7 @@ class Model15(nn.Module):
         super(Model15, self).__init__()
 
         self.layer1 = nn.Sequential(
-            nn.Conv2d(3, 32, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
@@ -599,7 +599,7 @@ class Model15(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(675840, 128),
+            nn.Linear(1388800, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 1),
@@ -620,7 +620,7 @@ class Model16(nn.Module):
         super(Model16, self).__init__()
 
         self.layer1 = nn.Sequential(
-            nn.Conv2d(3, 32, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
@@ -640,7 +640,7 @@ class Model16(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(675840, 128),
+            nn.Linear(1388800, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 1),
@@ -661,7 +661,7 @@ class Model17(nn.Module):
         super(Model17, self).__init__()
 
         self.layer1 = nn.Sequential(
-            nn.Conv2d(3, 32, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
@@ -681,7 +681,7 @@ class Model17(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(675840, 128),
+            nn.Linear(1388800, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 1),
@@ -702,7 +702,7 @@ class Model18(nn.Module):
         super(Model18, self).__init__()
 
         self.layer1 = nn.Sequential(
-            nn.Conv2d(3, 32, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
@@ -722,7 +722,7 @@ class Model18(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(675840, 128),
+            nn.Linear(1388800, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 1),
@@ -743,7 +743,7 @@ class Model19(nn.Module):
         super(Model19, self).__init__()
 
         self.layer1 = nn.Sequential(
-            nn.Conv2d(3, 32, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
@@ -763,7 +763,7 @@ class Model19(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(675840, 128),
+            nn.Linear(1388800, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 1),
@@ -784,7 +784,7 @@ class Model20(nn.Module):
         super(Model20, self).__init__()
 
         self.layer1 = nn.Sequential(
-            nn.Conv2d(3, 32, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
@@ -804,7 +804,7 @@ class Model20(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(675840, 128),
+            nn.Linear(1388800, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 1),
@@ -825,7 +825,7 @@ class Model21(nn.Module):
         super(Model21, self).__init__()
 
         self.layer1 = nn.Sequential(
-            nn.Conv2d(3, 32, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
@@ -845,7 +845,7 @@ class Model21(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(675840, 128),
+            nn.Linear(1388800, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 1),
@@ -866,7 +866,7 @@ class Model22(nn.Module):
         super(Model22, self).__init__()
 
         self.layer1 = nn.Sequential(
-            nn.Conv2d(3, 32, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
@@ -886,7 +886,7 @@ class Model22(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(675840, 128),
+            nn.Linear(1388800, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 1),
@@ -907,7 +907,7 @@ class Model23(nn.Module):
         super(Model23, self).__init__()
 
         self.layer1 = nn.Sequential(
-            nn.Conv2d(3, 32, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
@@ -927,7 +927,7 @@ class Model23(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(675840, 128),
+            nn.Linear(1388800, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 1),
@@ -948,7 +948,7 @@ class Model24(nn.Module):
         super(Model24, self).__init__()
 
         self.layer1 = nn.Sequential(
-            nn.Conv2d(3, 32, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
@@ -968,7 +968,7 @@ class Model24(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(675840, 128),
+            nn.Linear(1388800, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 21),
@@ -989,7 +989,7 @@ class Model25(nn.Module):
         super(Model25, self).__init__()
 
         self.layer1 = nn.Sequential(
-            nn.Conv2d(3, 32, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
@@ -1009,7 +1009,7 @@ class Model25(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(675840, 128),
+            nn.Linear(1388800, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 1),
