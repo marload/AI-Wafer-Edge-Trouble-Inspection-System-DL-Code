@@ -68,7 +68,7 @@ def train():
                 # if (idx+1) % 100 == 0:
                 print("--Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}".format(epoch + 1, num_epoch, i + 1,
                                                                              total_step, loss.item()))
-        print("-Model {} Learning Complete".format(idx))
+        print("-Model{} Learning Complete".format(idx))
 
         print("-Model{} Start Test".format(idx))
         model.eval()
@@ -80,7 +80,7 @@ def train():
                 images = images.to(device)
                 labels = labels.to(device)
                 outputs = model(images)
-
+                print(outputs.data)
                 if outputs.data >= 0.5:
                     predicted = 1
                 else:
