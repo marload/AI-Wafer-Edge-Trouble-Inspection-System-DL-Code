@@ -25,13 +25,13 @@ class Loader:
 
     def getLoader(self):
         print("\nPreprocessing data...")
-        # self.train_transform = self.get_TrainTransform()
 
         train_path = os.path.join(self.dataroot, 'train')
         test_path = os.path.join(self.dataroot, 'test')
 
-        # train_set = ImageFolder(train_path, transform=train_transform)
-        # test_set = ImageFolder(test_path, transform=test_transform)
+        self.get_TrainTransform()
+        self.get_TestTransform()
+
         train_set = ImageFolder(train_path, transform=self.train_transform)
         test_set = ImageFolder(test_path, transform=self.test_transform)
         print(self.imageSize)
