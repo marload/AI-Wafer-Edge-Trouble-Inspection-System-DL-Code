@@ -61,13 +61,12 @@ class Loader:
 
     def get_TrainTransform(self):
         if self.numModel == 1:
-            transform = T.Compose([
+            self.train_transform = T.Compose([
                 T.Resize(self.imageSize),
                 T.ToTensor(),
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
-            self.train_transform = transform
             return
 
         elif self.numModel == 2:
