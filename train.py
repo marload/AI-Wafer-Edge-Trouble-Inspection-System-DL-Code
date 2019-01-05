@@ -65,8 +65,8 @@ def train():
                 loss.backward()
                 optimizer.step()
 
-                if (idx+1) % 100 == 0:
-                    print("--Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}".format(epoch + 1, num_epoch, i + 1,
+                # if (idx+1) % 100 == 0:
+                print("--Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}".format(epoch + 1, num_epoch, i + 1,
                                                                              total_step, loss.item()))
         print("-Model {} Learning Complete".format(idx))
 
