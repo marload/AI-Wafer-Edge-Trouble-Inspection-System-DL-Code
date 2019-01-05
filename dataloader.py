@@ -32,8 +32,8 @@ class Loader:
 
         # train_set = ImageFolder(train_path, transform=train_transform)
         # test_set = ImageFolder(test_path, transform=test_transform)
-        train_set = ImageFolder(train_path, transform=T.Compose(self.train_transform))
-        test_set = ImageFolder(test_path, transform=T.Compose(self.test_transform))
+        train_set = ImageFolder(train_path, transform=self.train_transform)
+        test_set = ImageFolder(test_path, transform=self.test_transform)
         print(self.imageSize)
         print(type(self.imageSize))
         train_loader = DataLoader(train_set,
