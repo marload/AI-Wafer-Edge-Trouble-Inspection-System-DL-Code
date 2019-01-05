@@ -20,25 +20,20 @@ class Loader:
         self.num_workers = config.num_workers
         self.dataroot = PL.get_datarootList()[self.numModel]
         self.imageSize = PL.get_imageSizeList()[self.numModel]
+        self.test_transform = None
+        self.train_transform = None
 
     def getLoader(self):
         print("\nPreprocessing data...")
-        test_transform = self.get_TestTransform()
-        train_transform = self.get_TrainTransform()
+        # self.train_transform = self.get_TrainTransform()
 
         train_path = os.path.join(self.dataroot, 'train')
         test_path = os.path.join(self.dataroot, 'test')
 
         # train_set = ImageFolder(train_path, transform=train_transform)
         # test_set = ImageFolder(test_path, transform=test_transform)
-        train_set = ImageFolder(train_path, transform=T.Compose([
-            T.Resize((870, 100)),
-            T.ToTensor()
-        ]))
-        test_set = ImageFolder(test_path, transform=T.Compose([
-            T.Resize((870, 100)),
-            T.ToTensor()
-        ]))
+        train_set = ImageFolder(train_path, transform=T.Compose(self.train_transform))
+        test_set = ImageFolder(test_path, transform=T.Compose(self.test_transform))
         print(self.imageSize)
         print(type(self.imageSize))
         train_loader = DataLoader(train_set,
@@ -60,7 +55,8 @@ class Loader:
             T.Normalize(mean=(0.5, 0.5, 0.5),
                         std=(0.5, 0.5, 0.5))
         ])
-        return transform
+        self.test_transform = transform
+        return
 
     def get_TrainTransform(self):
         if self.numModel == 1:
@@ -70,7 +66,8 @@ class Loader:
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
-            return transform
+            self.train_transform = transform
+            return
 
         elif self.numModel == 2:
             transform = T.Compose([
@@ -79,7 +76,8 @@ class Loader:
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
-            return transform
+            self.train_transform = transform
+            return
 
         elif self.numModel == 3:
             transform = T.Compose([
@@ -88,7 +86,8 @@ class Loader:
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
-            return transform
+            self.train_transform = transform
+            return
 
         elif self.numModel == 4:
             transform = T.Compose([
@@ -97,7 +96,8 @@ class Loader:
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
-            return transform
+            self.train_transform = transform
+            return
 
         elif self.numModel == 5:
             transform = T.Compose([
@@ -106,7 +106,8 @@ class Loader:
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
-            return transform
+            self.train_transform = transform
+            return
 
         elif self.numModel == 6:
             transform = T.Compose([
@@ -115,7 +116,8 @@ class Loader:
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
-            return transform
+            self.train_transform = transform
+            return
 
         elif self.numModel == 7:
             transform = T.Compose([
@@ -124,7 +126,8 @@ class Loader:
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
-            return transform
+            self.train_transform = transform
+            return
 
         elif self.numModel == 8:
             transform = T.Compose([
@@ -133,7 +136,8 @@ class Loader:
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
-            return transform
+            self.train_transform = transform
+            return
 
         elif self.numModel == 9:
             transform = T.Compose([
@@ -142,7 +146,8 @@ class Loader:
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
-            return transform
+            self.train_transform = transform
+            return
 
         elif self.numModel == 10:
             transform = T.Compose([
@@ -151,7 +156,8 @@ class Loader:
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
-            return transform
+            self.train_transform = transform
+            return
 
         elif self.numModel == 11:
             transform = T.Compose([
@@ -160,6 +166,8 @@ class Loader:
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
+            self.train_transform = transform
+            return
             return transform
 
         elif self.numModel == 12:
@@ -169,7 +177,8 @@ class Loader:
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
-            return transform
+            self.train_transform = transform
+            return
 
         elif self.numModel == 13:
             transform = T.Compose([
@@ -178,7 +187,8 @@ class Loader:
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
-            return transform
+            self.train_transform = transform
+            return
 
         elif self.numModel == 14:
             transform = T.Compose([
@@ -187,7 +197,8 @@ class Loader:
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
-            return transform
+            self.train_transform = transform
+            return
 
         elif self.numModel == 15:
             transform = T.Compose([
@@ -196,7 +207,8 @@ class Loader:
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
-            return transform
+            self.train_transform = transform
+            return
 
         elif self.numModel == 16:
             transform = T.Compose([
@@ -205,7 +217,8 @@ class Loader:
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
-            return transform
+            self.train_transform = transform
+            return
 
         elif self.numModel == 17:
             transform = T.Compose([
@@ -214,7 +227,8 @@ class Loader:
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
-            return transform
+            self.train_transform = transform
+            return
 
         elif self.numModel == 18:
             transform = T.Compose([
@@ -223,7 +237,8 @@ class Loader:
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
-            return transform
+            self.train_transform = transform
+            return
 
         elif self.numModel == 19:
             transform = T.Compose([
@@ -232,7 +247,8 @@ class Loader:
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
-            return transform
+            self.train_transform = transform
+            return
 
         elif self.numModel == 20:
             transform = T.Compose([
@@ -241,7 +257,8 @@ class Loader:
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
-            return transform
+            self.train_transform = transform
+            return
 
         elif self.numModel == 21:
             transform = T.Compose([
@@ -250,7 +267,8 @@ class Loader:
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
-            return transform
+            self.train_transform = transform
+            return
 
         elif self.numModel == 22:
             transform = T.Compose([
@@ -259,7 +277,8 @@ class Loader:
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
-            return transform
+            self.train_transform = transform
+            return
 
         elif self.numModel == 23:
             transform = T.Compose([
@@ -268,7 +287,8 @@ class Loader:
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
-            return transform
+            self.train_transform = transform
+            return
 
         elif self.numModel == 24:
             transform = T.Compose([
@@ -277,7 +297,8 @@ class Loader:
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
-            return transform
+            self.train_transform = transform
+            return
 
         elif self.numModel == 25:
             transform = T.Compose([
@@ -286,6 +307,7 @@ class Loader:
                 T.Normalize(mean=(0.5, 0.5, 0.5),
                             std=(0.5, 0.5, 0.5))
             ])
-            return transform
+            self.train_transform = transform
+            return
 
 
