@@ -15,7 +15,7 @@ num_workers = config.num_workers
 
 class Loader:
     def __init__(self, numModel): # numModel is an integer value between 1 and 25
-        self.numModel = numModel# index operation
+        self.numModel = numModel  # index operation
         self.batch_size = config.batch_size
         self.num_workers = config.num_workers
         self.dataroot = PL.get_datarootList()[self.numModel-1]
