@@ -77,6 +77,7 @@ class Model2(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
@@ -118,6 +119,7 @@ class Model3(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
@@ -159,6 +161,7 @@ class Model4(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
@@ -200,6 +203,7 @@ class Model5(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
@@ -241,6 +245,7 @@ class Model6(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
@@ -282,6 +287,7 @@ class Model7(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
@@ -323,6 +329,7 @@ class Model8(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
@@ -364,6 +371,7 @@ class Model9(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
@@ -405,6 +413,7 @@ class Model10(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
@@ -446,6 +455,7 @@ class Model11(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
@@ -487,6 +497,7 @@ class Model12(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
@@ -528,6 +539,7 @@ class Model13(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
@@ -569,6 +581,7 @@ class Model14(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
@@ -610,6 +623,7 @@ class Model15(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
@@ -651,6 +665,7 @@ class Model16(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
@@ -692,6 +707,7 @@ class Model17(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
@@ -733,6 +749,7 @@ class Model18(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
@@ -774,6 +791,7 @@ class Model19(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
@@ -815,6 +833,7 @@ class Model20(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
@@ -856,6 +875,7 @@ class Model21(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
@@ -897,6 +917,7 @@ class Model22(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
@@ -938,6 +959,7 @@ class Model23(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
@@ -979,6 +1001,7 @@ class Model24(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
@@ -1020,6 +1043,7 @@ class Model25(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
