@@ -20,7 +20,7 @@ parser.add_argument('--num_workers', type=int, default=1, help='number of worker
 
 parser.add_argument('--num_epoch', type=int, default=5, help='number of epochs')
 
-defaultLearningRateList = [0.001, 0.001, 0.001, 0.001, 0.001,
+defaultLearningRateList = [0.01, 0.001, 0.001, 0.001, 0.001,
                            0.001, 0.001, 0.001, 0.001, 0.001,
                            0.001, 0.001, 0.001, 0.001, 0.001,
                            0.001, 0.001, 0.001, 0.001, 0.001,
