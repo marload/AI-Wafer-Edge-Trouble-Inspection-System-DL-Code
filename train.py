@@ -43,6 +43,7 @@ def train():
 
 
         model = eval("models.Model{}()".format(idx))
+        model = nn.DataParallel(model)
         model = model.to(device)
 
         train_loader = trainDataLoaderDict[idx]
