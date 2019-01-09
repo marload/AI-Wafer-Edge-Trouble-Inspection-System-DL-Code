@@ -6,7 +6,7 @@ for i in range(1, 26):
     parser.add_argument('--dataroot{}'.format(i), type=str, default='./dataset/model{}'.format(i), help='dataset path of model{}'.format(i))
     parser.add_argument('--savePathOfModel{}'.format(i), type=str, default='./models/model{}.ckpt'.format(i))
 
-defaultImageSizeList = [(500, 195), (500, 200), (500, 187), (500, 170), (500,170),
+defaultImageSizeList = [(500, 195), (500, 190), (500, 187), (500, 170), (500,170),
                         (500, 163), (500, 156), (500, 149), (500, 141), (500, 138),
                         (500, 136), (500, 135), (500, 134), (500, 131), (500, 129),
                         (500, 128), (500, 124), (500, 121), (500, 122), (500, 122),
