@@ -55,6 +55,8 @@ class Model2(nn.Module):
             nn.MaxPool2d(kernel_size=2, stride=2),
             nn.ReLU()
         )
+        self.layer1 = nn.DataParallel(self.layer1)
+
         self.layer2 = nn.Sequential(
             nn.Conv2d(64, 128, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(128),
@@ -65,6 +67,8 @@ class Model2(nn.Module):
             nn.MaxPool2d(kernel_size=2, stride=2),
             nn.ReLU()
         )
+        self.layer2 = nn.DataParallel(self.layer2)
+
         self.layer3 = nn.Sequential(
             nn.Conv2d(256, 512, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(512),
@@ -75,6 +79,8 @@ class Model2(nn.Module):
             nn.MaxPool2d(kernel_size=2, stride=2),
             nn.ReLU()
         )
+        self.layer3 = nn.DataParallel(self.layer3)
+
         self.fc = nn.Sequential(
             nn.Linear(18874368, 128),
             nn.Dropout2d(p=0.5),
