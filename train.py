@@ -51,7 +51,8 @@ def train():
         train_loader = trainDataLoaderDict[idx]
         test_loader = testDataLoaderDict[idx]
 
-        criterion = nn.BCELoss()
+        # criterion = nn.BCELoss()
+        criterion = nn.CrossEntropyLoss()
         optimizer = torch.optim.Adam(model.parameters(), lr=lr)
 
         total_step = len(train_loader)
