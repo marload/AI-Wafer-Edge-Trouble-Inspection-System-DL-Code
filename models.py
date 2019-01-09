@@ -76,7 +76,7 @@ class Model2(nn.Module):
             nn.ReLU()
         )
         self.fc = nn.Sequential(
-            nn.Linear(1504000, 128),
+            nn.Linear(18874368, 128),
             nn.Dropout2d(p=0.5),
             nn.Linear(128, 256),
             nn.Linear(256, 1),
