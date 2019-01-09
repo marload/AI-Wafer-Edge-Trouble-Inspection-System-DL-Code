@@ -4,6 +4,7 @@ import models
 from dataloader import Loader
 from config import get_config
 from parserlist import get_savePathOfModelList
+from torchvision.models import resnet18
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 config = get_config()
@@ -42,8 +43,9 @@ def train():
         modelPath = saveModelPath[idx-1]
 
 
-        model = eval("models.Model{}()".format(idx))
-        model = nn.DataParallel(model)
+        # model = eval("models.Model{}()".format(idx))
+        # model = nn.DataParallel(model)
+        model = resnet18(False, 2)
         model = model.to(device)
 
         train_loader = trainDataLoaderDict[idx]
