@@ -45,7 +45,7 @@ def train():
 
         # model = eval("models.Model{}()".format(idx))
         # model = nn.DataParallel(model)
-        model = resnet18(False, 2)
+        model = resnet18(pretrained=False, num_classes=2)
         model = model.to(device)
 
         train_loader = trainDataLoaderDict[idx]
