@@ -28,7 +28,7 @@ defaultLearningRateList = [0.001, 0.001, 0.001, 0.001, 0.001,
 for i, lr in enumerate(defaultLearningRateList):
     parser.add_argument('--lr{}'.format(i+1), type=float, default=lr, help='learning rate of model{}'.format(i+1))
 
-parser.add_argument('--idxModel', type=list, default=[1], help='1~25 model num. dafult is all model')
+parser.add_argument('--idxModel', type=list, default=[2], help='1~25 model num. dafult is all model')
 
 
 def get_config():
