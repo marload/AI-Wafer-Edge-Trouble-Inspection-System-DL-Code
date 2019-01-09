@@ -87,6 +87,7 @@ class Model2(nn.Module):
         out = self.layer1(x)
         out = self.layer2(out)
         out = self.layer3(out)
+        print(out.shape)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
 
